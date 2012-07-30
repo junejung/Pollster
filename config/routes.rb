@@ -1,4 +1,60 @@
 Pollster::Application.routes.draw do
+  get "questions/index"
+
+  get "questions/create"
+
+  get "questions/edit"
+
+  get "questions/new"
+
+  get "questions/show"
+
+  get "questions/destroy"
+
+  get "questions/update"
+
+  get "options/index"
+
+  get "options/create"
+
+  get "options/edit"
+
+  get "options/new"
+
+  get "options/show"
+
+  get "options/destroy"
+
+  get "options/update"
+
+  get "polls/index"
+
+  get "polls/create"
+
+  get "polls/edit"
+
+  get "polls/new"
+
+  get "polls/show"
+
+  get "polls/destroy"
+
+  get "polls/update"
+
+  get "votes/index"
+
+  get "votes/create"
+
+  get "votes/edit"
+
+  get "votes/add"
+
+  get "votes/show"
+
+  get "votes/destroy"
+
+  get "votes/update"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
