@@ -1,14 +1,19 @@
 class PollsController < ApplicationController
   def index
-  end
-
-  def create
-  end
-
-  def edit
+    @polls = Poll.all
   end
 
   def new
+    @poll = Poll.new
+  end
+
+  def create
+    @poll = Poll.new(params[:name])
+    @poll.save
+    redirect_to new_question_path
+  end
+
+  def edit
   end
 
   def show

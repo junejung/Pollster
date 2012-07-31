@@ -1,8 +1,11 @@
 class OptionsController < ApplicationController
   def index
+    @options = Option.all
   end
 
   def create
+    @option = Option.new(params[:id])
+    @option.save
   end
 
   def edit

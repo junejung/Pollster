@@ -1,17 +1,19 @@
 class QuestionsController < ApplicationController
-  def index
-  end
 
   def create
+    @question = Poll.new(params[:name])
+    @question.save
   end
 
   def edit
   end
 
   def new
+    @question = Question.new
   end
 
-  def show
+  def index
+    @questions = Question.all
   end
 
   def destroy

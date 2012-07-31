@@ -1,2 +1,17 @@
-<h1>Polls#index</h1>
-<p>Find me in app/views/polls/index.html.erb</p>
+<h1>Listing polls</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+  </tr>
+
+<% @polls.each do |poll| %>
+  <tr>
+    <td><%= poll.name %>  </td>
+    <td><%= link_to 'Show', poll %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
